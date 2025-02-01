@@ -1,13 +1,13 @@
 "use client"
 
-import { Button } from "@/components/ui/button"
+import { Button } from "../components/ui/button"
 import { ArrowRight, Code2, Flame } from "lucide-react"
 import { motion } from "framer-motion"
 
 export function Hero() {
   return (
     <section className="min-h-screen pt-24 pb-12 grid-bg">
-      <div className="container relative">
+      <div className="container relative p-20">
         <div className="gradient-bg absolute inset-0" />
         <div className="relative grid lg:grid-cols-2 gap-12 items-center">
           <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.5 }}>

@@ -37,10 +37,8 @@ const RegistrationForm = () => {
       className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8"
     >
       <div className="mb-8 text-center">
-        <h1 className="text-4xl font-bold text-white">Team Registration</h1>
-        <p className="mt-2 text-gray-400">
-          Enter the details for all three team members
-        </p>
+        <h1 className="text-4xl font-bold text-white">Register your Group Here</h1>
+        
       </div>
       <div className="grid gap-8 md:grid-cols-3">
         {players.map((player, index) => (
@@ -53,9 +51,7 @@ const RegistrationForm = () => {
               <CardTitle className="text-white text-xl bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
                 Player {index + 1}
               </CardTitle>
-              <CardDescription className="text-gray-400">
-                Enter player {index + 1}'s details
-              </CardDescription>
+             
             </CardHeader>
             <CardContent className="space-y-4 z-10 relative z-10">
               <div className="space-y-2 z-11 ">
@@ -76,36 +72,8 @@ const RegistrationForm = () => {
                   className="bg-gray-800/50 border-gray-700/50 text-white placeholder:text-gray-500 focus:border-purple-500/50 focus:ring-purple-500/20 transition-all duration-300"
                 />
               </div>
-              <div className="space-y-2">
-                <Label htmlFor={`wallet-${index}`} className="text-gray-200">
-                  Wallet Address
-                </Label>
-                <Input
-                  id={`wallet-${index}`}
-                  type="text"
-                  placeholder="Enter ETH wallet address"
-                  value={player.wallet}
-                  onChange={(e) =>
-                    updatePlayer(index, "wallet", e.target.value)
-                  }
-                  className="bg-gray-800/50 border-gray-700/50 text-white placeholder:text-gray-500 focus:border-purple-500/50 focus:ring-purple-500/20 transition-all duration-300"
-                />
-              </div>
-              <div className="space-y-2">
-                <Label htmlFor={`discord-${index}`} className="text-gray-200">
-                  Discord ID
-                </Label>
-                <Input
-                  id={`discord-${index}`}
-                  type="text"
-                  placeholder="Enter Discord ID"
-                  value={player.discord}
-                  onChange={(e) =>
-                    updatePlayer(index, "discord", e.target.value)
-                  }
-                  className="bg-gray-800/50 border-gray-700/50 text-white placeholder:text-gray-500 focus:border-purple-500/50 focus:ring-purple-500/20 transition-all duration-300"
-                />
-              </div>
+              <Button variant="outline">Verify your registration</Button>
+
             </CardContent>
           </Card>
         ))}

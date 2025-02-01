@@ -28,7 +28,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-, "app/registration/components/registration-form.jsx"  ],
+, "app/register-team/components/registration-form.jsx"  ],
   "exclude": [
     "node_modules"
   ]

@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Card, CardContent } from "@/components/ui/card"
+import { Card, CardContent } from "../components/ui/card"
 import { Code2, Trophy, Wallet, Zap } from "lucide-react"
 
 const features = [
@@ -31,7 +31,7 @@ export function Features() {
   return (
     <section className="py-20 relative">
       <div className="gradient-bg absolute inset-0" />
-      <div className="container relative">
+      <div className="container relative px-16">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

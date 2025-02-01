@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Card, CardContent } from "@/components/ui/card"
+import { Card, CardContent } from "../components/ui/card"
 import { Award, Code, Users } from "lucide-react"
 
 const stats = [

@@ -1,10 +1,10 @@
 "use client";
 
-import { Nav } from "@/components/nav"
-import { Hero } from "@/components/hero"
-import { Stats } from "@/components/stats"
-import { Features } from "@/components/features"
-import { Footer } from "@/components/footer"
+import { Nav } from "../components/nav"
+import { Hero } from "../components/hero"
+import { Features } from "../components/features"
+import { Stats } from "../components/stats"
+import { Footer } from "../components/footer"
 
 export default function Home() {
   return (
